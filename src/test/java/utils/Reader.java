@@ -1,19 +1,21 @@
+package utils;
+
+import data.TestData;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class SolutionTask {
+public class Reader {
 
 //    public static void main(String[] args) {
-//        List<TestData> testDataList = readLogFile("src/main/java/data.log");
+       List<data.TestData> testDataList = readLogFile("src/main/java/data.log");
 //
-//        Map<TestData, Integer> map = new HashMap<>();
+//        Map<data.TestData, Integer> map = new HashMap<>();
 //
 //        testDataList.forEach(data -> {
 //            if(map.containsKey(data)) {
@@ -43,9 +45,9 @@ public class SolutionTask {
 //
 //    }
 //
-////    public static void checkData(Map<TestData, Integer> data) throws AssertionError {
+////    public static void checkData(Map<data.TestData, Integer> data) throws AssertionError {
 ////        //if(data.containsValue(2)){
-////        for (Map.Entry<TestData, Integer> entry : data.entrySet()) {
+////        for (Map.Entry<data.TestData, Integer> entry : data.entrySet()) {
 ////            //System.out.println(entry.getKey() + "/" + entry.getValue());
 ////            if(entry.getValue() == 2) throw new AssertionError(entry.getKey()+ " Repeated value!!!");
 ////        }

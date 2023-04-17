@@ -1,3 +1,5 @@
+package data;
+
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -45,7 +47,7 @@ public class TestData {
 
     @Override
     public String toString() {
-        return "TestData{" +
+        return "data.TestData{" +
                 "send='" + send + '\'' +
                 ", id='" + id + '\'' +
                 ", date=" + date +
